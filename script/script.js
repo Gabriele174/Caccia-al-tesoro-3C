@@ -20,6 +20,5 @@ function doLogin (d) {
           .catch((error) =>{
               console.error('Error:', error);
           });
-
       }
 }
