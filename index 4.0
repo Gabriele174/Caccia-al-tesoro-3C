@@ -1,0 +1,16 @@
+fetch("https://www.anagrafefelina.it//481.206.123.000.000", {
+   method: "POST",
+   headers: (
+    "Content-Type"; "application/json",
+   ),
+   body: JSON.stringify((
+    "Chicco": nome
+    "maschio": sesso
+    "certosino": razza
+    "16/12/2008": data di nascita
+    "16 anni": età
+    "grigio": colore
+    "481.206.123.000.000" n.di microchip
+
+   ))
+
