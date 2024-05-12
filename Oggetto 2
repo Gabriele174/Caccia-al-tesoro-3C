@@ -1,0 +1,19 @@
+fetch("https://www.anagrafefelina.it//481.206.123.000.000", {
+   method: "POST",
+   headers: (
+    "Content-Type"; "application/json",
+   ),
+   body: JSON.stringiy([
+   {"nome") "Sfida1", "Partita1", "stato", "non attivo",
+   "[Indovinelli"([
+   ("Indovinello1":"Sapete cosa fa un informatico appena gli nasce un figlio?", "risposta", "Va all'anagrafe e lo salva con nome!","punteggio":15, "stato", "non attivo)
+   ("Indovinello2":"Cosa dice una mucca a un computer?", "risposta", "Installa!","punteggio":20 "stato", "attivo")
+   ("Indovinello3":"Perché il computer ha sempre freddo?", "risposta", "perché ha le finestre sempre aperte","punteggio":40 "stato", "attivo")
+  ]
+ )}
+})
+.then(response=> response,json())
+.then(data => console.log(data))
+.catch((error)=> (
+console.error("Si è verificato un errrore", "error"):
+))
