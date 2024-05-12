@@ -1,0 +1,17 @@
+fetch("http:/wwwcacciaapi.altervista.org/login.php/login.php/loginipad", {
+   method: "POST", 
+   header: {
+    "Content-type": "application/jason",
+   },
+   body: JSON.stringiy ([
+   ("nome": "Sfida1","codice": "Partita1","stato": "non attivo"),
+   ("nome": "Sfida2","codice": "Partita2","stato": "attivo"),
+   ("nome": "Sfida3","codice": "Partita3","stato": "non attivo"),
+   ("nome": "Sfida4","codice": "Partita4","stato": "attivo"),
+  )]}
+ }}
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch((error) => { 
+   console.error("Si è verificato un errore;", error);
+  });
